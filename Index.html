@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Photography Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-section {
+            margin: 20px 0;
+        }
+        .product-section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .product {
+            display: flex;
+            margin: 10px 0;
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .contact-form {
+            margin: 20px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Film Photography Shop</h1>
+        <nav>
+            <a href="#cameras">Cameras</a>
+            <a href="#films">Films</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="cameras" class="product-section">
+            <h2>Cameras</h2>
+            <div class="product">
+                <img src="Images/camera 1.png" alt="Medium Format Camera">
+                <div>
+                    <h3>Medium Format Camera</h3>
+                    <p>Description of the medium format camera. High-quality images, suitable for professional photographers.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Images/Camera 2.png" alt="35mm Camera">
+                <div>
+                    <h3>35mm Camera</h3>
+                    <p>Description of the 35mm camera. Compact and easy to use, perfect for beginners and enthusiasts.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Images/Camera 3.png" alt="Point and Shoot Camera">
+                <div>
+                    <h3>Point and Shoot Camera</h3>
+                    <p>Description of the point and shoot camera. Simple and portable, ideal for everyday photography.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="films" class="product-section">
+            <h2>Films</h2>
+            <div class="product">
+                <img src="Images/Film 1.png" alt="120 Film">
+                <div>
+                    <h3>120 Film</h3>
+                    <p>Description of 120 film. Great for medium format cameras, offers high-resolution images.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Images/Film 2.png" alt="35mm Film">
+                <div>
+                    <h3>35mm Film</h3>
+                    <p>Description of 35mm film. Versatile and widely used, suitable for various photography styles.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Film Photography Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
